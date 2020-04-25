@@ -23,338 +23,270 @@
         android:textAlignment="center"
         android:textSize="30sp" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="644dp">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:stretchColumns="0,1,2,3,4,5,6">
 
-        <Button
-            android:id="@+id/btnGiyeok"
-            android:layout_width="50dp"
-            android:layout_height="55dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:text="ㄱ"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/btnNieun"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/btnNieun"
-            android:layout_width="50dp"
-            android:layout_height="55dp"
-            android:text="ㄴ"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/btnGiyeok"
-            app:layout_constraintEnd_toStartOf="@+id/btnDigeut"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnGiyeok"
-            app:layout_constraintTop_toTopOf="@+id/btnGiyeok" />
+            <Button
+                android:id="@+id/btnGiyeok"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:text="ㄱ"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnDigeut"
-            android:layout_width="50dp"
-            android:layout_height="55dp"
-            android:text="ㄷ"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/btnGiyeok"
-            app:layout_constraintEnd_toStartOf="@+id/btnRieul"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnNieun"
-            app:layout_constraintTop_toTopOf="@+id/btnGiyeok" />
+            <Button
+                android:id="@+id/btnNieun"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:text="ㄴ"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnRieul"
-            android:layout_width="50dp"
-            android:layout_height="55dp"
-            android:text="ㄹ"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/btnGiyeok"
-            app:layout_constraintEnd_toStartOf="@+id/btnMieum"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnDigeut"
-            app:layout_constraintTop_toTopOf="@+id/btnGiyeok" />
+            <Button
+                android:id="@+id/btnDigeut"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:text="ㄷ"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnMieum"
-            android:layout_width="50dp"
-            android:layout_height="55dp"
-            android:text="ㅁ"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/btnGiyeok"
-            app:layout_constraintEnd_toStartOf="@+id/btnBieup"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnRieul"
-            app:layout_constraintTop_toTopOf="@+id/btnGiyeok" />
+            <Button
+                android:id="@+id/btnRieul"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:text="ㄹ"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnBieup"
-            android:layout_width="50dp"
-            android:layout_height="55dp"
-            android:text="ㅂ"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/btnGiyeok"
-            app:layout_constraintEnd_toStartOf="@+id/btnSiot"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnMieum"
-            app:layout_constraintTop_toTopOf="@+id/btnGiyeok" />
+            <Button
+                android:id="@+id/btnMieum"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:text="ㅁ"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnSiot"
-            android:layout_width="50dp"
-            android:layout_height="55dp"
-            android:text="ㅅ"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/btnGiyeok"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnBieup"
-            app:layout_constraintTop_toTopOf="@+id/btnGiyeok" />
+            <Button
+                android:id="@+id/btnBieup"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:text="ㅂ"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnIeung"
-            android:layout_width="50dp"
-            android:layout_height="55dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:text="ㅇ"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/btnJieut"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnGiyeok" />
+            <Button
+                android:id="@+id/btnSiot"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:text="ㅅ"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </TableRow>
 
-        <Button
-            android:id="@+id/btnKhieuk"
-            android:layout_width="50dp"
-            android:layout_height="55dp"
-            android:text="ㅋ"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/btnIeung"
-            app:layout_constraintEnd_toStartOf="@+id/btnTieut"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnChieut"
-            app:layout_constraintTop_toTopOf="@+id/btnIeung" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btnJieut"
-            android:layout_width="50dp"
-            android:layout_height="55dp"
-            android:text="ㅈ"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/btnIeung"
-            app:layout_constraintEnd_toStartOf="@+id/btnChieut"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnIeung"
-            app:layout_constraintTop_toTopOf="@+id/btnIeung" />
+            <Button
+                android:id="@+id/btnIeung"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:layout_gravity="clip_horizontal"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="16dp"
+                android:text="ㅇ"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnChieut"
-            android:layout_width="50dp"
-            android:layout_height="55dp"
-            android:text="ㅊ"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/btnIeung"
-            app:layout_constraintEnd_toStartOf="@+id/btnKhieuk"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnJieut"
-            app:layout_constraintTop_toTopOf="@+id/btnIeung" />
+            <Button
+                android:id="@+id/btnJieut"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:layout_gravity="clip_horizontal"
+                android:text="ㅈ"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnTieut"
-            android:layout_width="50dp"
-            android:layout_height="55dp"
-            android:text="ㅌ"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/btnIeung"
-            app:layout_constraintEnd_toStartOf="@+id/btnPieup"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnKhieuk"
-            app:layout_constraintTop_toTopOf="@+id/btnIeung" />
+            <Button
+                android:id="@+id/btnChieut"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:layout_gravity="clip_horizontal"
+                android:text="ㅊ"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnPieup"
-            android:layout_width="50dp"
-            android:layout_height="55dp"
-            android:text="ㅍ"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/btnIeung"
-            app:layout_constraintEnd_toStartOf="@+id/btnHieut"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnTieut"
-            app:layout_constraintTop_toTopOf="@+id/btnIeung" />
+            <Button
+                android:id="@+id/btnKhieuk"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:layout_gravity="clip_horizontal"
+                android:text="ㅋ"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnHieut"
-            android:layout_width="50dp"
-            android:layout_height="55dp"
-            android:text="ㅎ"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/btnIeung"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnPieup"
-            app:layout_constraintTop_toTopOf="@+id/btnIeung" />
+            <Button
+                android:id="@+id/btnTieut"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:layout_gravity="clip_horizontal"
+                android:text="ㅌ"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnGa"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="92dp"
-            android:text="가"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/btnGya"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnGiyeok" />
+            <Button
+                android:id="@+id/btnPieup"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:layout_gravity="clip_horizontal"
+                android:text="ㅍ"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnGyo"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="28dp"
-            android:text="교"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/btnGu"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintHorizontal_chainStyle="spread"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnGa" />
+            <Button
+                android:id="@+id/btnHieut"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:layout_gravity="clip_horizontal"
+                android:text="ㅎ"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnGu"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:text="구"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/btnGyo"
-            app:layout_constraintEnd_toStartOf="@+id/btnGyu"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnGyo"
-            app:layout_constraintTop_toTopOf="@+id/btnGyo" />
+        </TableRow>
 
-        <Button
-            android:id="@+id/btnGyu"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:text="규"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/btnGyo"
-            app:layout_constraintEnd_toStartOf="@+id/btnGeu"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnGu"
-            app:layout_constraintTop_toTopOf="@+id/btnGyo" />
+    </TableLayout>
 
-        <Button
-            android:id="@+id/btnGeu"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:text="그"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/btnGyo"
-            app:layout_constraintEnd_toStartOf="@+id/btnGi"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnGyu"
-            app:layout_constraintTop_toTopOf="@+id/btnGyo" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="294dp"
+        android:layout_marginTop="65dp"
+        android:stretchColumns="0,1,2,3,4">
 
-        <Button
-            android:id="@+id/btnGi"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_marginEnd="16dp"
-            android:text="기"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/btnGyo"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnGeu"
-            app:layout_constraintTop_toTopOf="@+id/btnGyo" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btnGya"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:text="갸"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/btnGa"
-            app:layout_constraintEnd_toStartOf="@+id/btnGeo"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnGa"
-            app:layout_constraintTop_toTopOf="@+id/btnGa" />
+            <Button
+                android:id="@+id/btnGa"
+                android:layout_width="65dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="20dp"
+                android:text="가"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnGeo"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:text="거"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/btnGa"
-            app:layout_constraintEnd_toStartOf="@+id/btnGyeo"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnGya"
-            app:layout_constraintTop_toTopOf="@+id/btnGa" />
+            <Button
+                android:id="@+id/btnGya"
+                android:layout_width="65dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:text="갸"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnGyeo"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:text="겨"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/btnGa"
-            app:layout_constraintEnd_toStartOf="@+id/btnGo"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnGeo"
-            app:layout_constraintTop_toTopOf="@+id/btnGa" />
+            <Button
+                android:id="@+id/btnGeo"
+                android:layout_width="65dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:text="거"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnGo"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_marginEnd="16dp"
-            android:text="고"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/btnGa"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnGyeo"
-            app:layout_constraintTop_toTopOf="@+id/btnGa" />
+            <Button
+                android:id="@+id/btnGyeo"
+                android:layout_width="65dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:text="겨"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/btnGo"
+                android:layout_width="65dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                android:text="고"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50">
+
+            <Button
+                android:id="@+id/btnGyo"
+                android:layout_width="65dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="60dp"
+                android:text="교"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnGu"
+                android:layout_width="65dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="60dp"
+                android:text="구"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnGyu"
+                android:layout_width="65dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="60dp"
+                android:text="규"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnGeu"
+                android:layout_width="65dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="60dp"
+                android:text="그"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnGi"
+                android:layout_width="65dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="0dp"
+                android:text="기"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </TableLayout>
+
 </LinearLayout>

@@ -12,16 +12,19 @@
         <activity android:name=".IntroActivity"></activity>
         <activity android:name=".CorrectionActivity" />
         <activity android:name=".InfoChangeActivity" />
-        <activity android:name=".Step01Activity" />
-        <activity android:name=".StudyActivity" />
+        <activity android:name=".Step01Activity" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".StudyActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".JoinActivity" />
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
