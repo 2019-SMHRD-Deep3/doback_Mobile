@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CorrectionActivity">
+
+    <TextView
+        android:id="@+id/tvCorrectGa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="가"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imgCor"
+        android:layout_width="458dp"
+        android:layout_height="304dp"
+        app:srcCompat="@android:drawable/progress_horizontal" />
+
+    <TextView
+        android:id="@+id/tvContentsText"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:text="교정contents교정contents교정contents교정contents교정contents교정contents교정contents교정contents"
+        android:textSize="30sp" />
+</LinearLayout>
