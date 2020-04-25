@@ -6,148 +6,74 @@
     android:layout_height="match_parent"
     tools:context=".JoinActivity">
 
-    <TextView
-        android:id="@+id/tvId"
-        android:layout_width="110dp"
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="24dp"
-        android:text=" id "
-        android:textAlignment="center"
-        android:textSize="24sp"
+        android:ems="10"
+        android:hint="아이디 입력"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/et_pw"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvPw"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:text="password"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.103"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvId" />
-
-    <TextView
-        android:id="@+id/tvPw2"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:text="passwordconfirm"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.102"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvPw" />
-
-    <TextView
-        android:id="@+id/tvEmail"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:text="e-mail"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.102"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvPw2" />
-
-    <TextView
-        android:id="@+id/tvPhone"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="28dp"
-        android:text="phone"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.102"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
-
     <EditText
-        android:id="@+id/etLogId"
+        android:id="@+id/et_pw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:ems="10"
-        android:hint="Id"
-        android:inputType="textPersonName"
-        android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tvId"
+        android:hint="비밀번호 입력"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/et_pwCheck"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvId" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_id" />
 
     <EditText
-        android:id="@+id/etEmail"
+        android:id="@+id/et_pwCheck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:ems="10"
-        android:hint="e-mail"
-        android:inputType="textPersonName"
-        android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tvEmail"
+        android:hint="비밀번호 확인"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/et_email"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvEmail" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_pw" />
 
     <EditText
-        android:id="@+id/etPhone"
+        android:id="@+id/et_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:ems="10"
-        android:hint="phone"
+        android:hint="이메일 입력"
         android:inputType="textPersonName"
-        android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tvPhone"
+        app:layout_constraintBottom_toTopOf="@+id/et_phone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvPhone" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_pwCheck" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="휴대폰 번호 입력"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btn_join"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
 
     <Button
-        android:id="@+id/btnJoin"
+        android:id="@+id/btn_join"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Join"
+        android:text="회원가입"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/et_phone" />
 
-    <EditText
-        android:id="@+id/etPw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:ems="10"
-        android:hint="password"
-        android:inputType="textPassword"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tvPw"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvPw" />
-
-    <EditText
-        android:id="@+id/etPw2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:ems="10"
-        android:hint="passwordconfirm"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="@+id/tvPw2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvPw2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
