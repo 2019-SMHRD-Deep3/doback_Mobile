@@ -8,61 +8,39 @@
     tools:context=".LoginActivity">
 
     <EditText
-        android:id="@+id/etLogId"
+        android:id="@+id/et_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="id"
+        android:hint="아이디 입력"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_LId"
+        app:layout_constraintBottom_toTopOf="@+id/et_pw"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tv_LId"
-        app:layout_constraintTop_toTopOf="@+id/tv_LId" />
-
-    <TextView
-        android:id="@+id/tv_LId"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginBottom="32dp"
-        android:text="id"
-        android:textAlignment="viewEnd"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_LPw"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="password"
-        android:textAlignment="viewEnd"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/tv_LId"
-        app:layout_constraintStart_toStartOf="@+id/tv_LId"
-        app:layout_constraintTop_toBottomOf="@+id/tv_LId" />
-
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="login"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="240dp" />
-
     <EditText
-        android:id="@+id/etLogPw"
+        android:id="@+id/et_pw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="password"
+        android:hint="비밀번호 입력"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="@+id/tv_LPw"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tv_LPw"
-        app:layout_constraintTop_toTopOf="@+id/tv_LPw" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_id" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_pw" />
 </androidx.constraintlayout.widget.ConstraintLayout>
