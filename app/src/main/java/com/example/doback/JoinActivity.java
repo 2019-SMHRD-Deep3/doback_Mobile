@@ -80,7 +80,8 @@ public class JoinActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join);
         ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+        actionBar.setTitle("뒤로가기");
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         getAppKeyHash();
 

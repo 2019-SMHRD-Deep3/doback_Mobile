@@ -1,5 +1,6 @@
 package com.example.doback;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -15,6 +16,8 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
         btn_login = findViewById(R.id.bnt_login);
         btn_join = findViewById(R.id.btn_join);
