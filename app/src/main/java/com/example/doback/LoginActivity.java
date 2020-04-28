@@ -80,7 +80,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("뒤로가기");
+        actionBar.setTitle("로그인");
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         getAppKeyHash();

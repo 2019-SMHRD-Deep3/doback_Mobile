@@ -20,7 +20,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".CorrectionActivity" />
-        <activity android:name=".Step01Activity" />
+        <activity android:name=".Step01Activity" >
+
+        </activity>
         <activity android:name=".StudyActivity" />
         <activity android:name=".LoginActivity" android:parentActivityName=".HomeActivity" />
         <activity android:name=".JoinActivity" android:parentActivityName=".HomeActivity" />
