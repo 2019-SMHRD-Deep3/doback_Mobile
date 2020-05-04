@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Step1Activity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="기본 자모음 연습"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="0,1,2,3,4,5,6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bnt_c1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="ㄱ" />
+
+            <Button
+                android:id="@+id/bnt_c2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="ㄴ" />
+
+            <Button
+                android:id="@+id/bnt_c3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="ㄷ" />
+
+            <Button
+                android:id="@+id/bnt_c4"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:text="ㄹ" />
+
+            <Button
+                android:id="@+id/bnt_c5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:text="ㅁ" />
+
+            <Button
+                android:id="@+id/bnt_c6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="5"
+                android:text="ㅂ" />
+
+            <Button
+                android:id="@+id/bnt_c7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="6"
+                android:text="ㅅ" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bnt_c8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="ㅇ" />
+
+            <Button
+                android:id="@+id/bnt_c9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="ㅈ" />
+
+            <Button
+                android:id="@+id/bnt_c10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="ㅊ" />
+
+            <Button
+                android:id="@+id/bnt_c11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:text="ㅋ" />
+
+            <Button
+                android:id="@+id/bnt_c12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:text="ㅌ" />
+
+            <Button
+                android:id="@+id/bnt_c13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="5"
+                android:text="ㅍ" />
+
+            <Button
+                android:id="@+id/bnt_c14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="6"
+                android:text="ㅎ" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="0,1,2,3,4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bnt_v1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="ㅏ" />
+
+            <Button
+                android:id="@+id/bnt_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="ㅑ" />
+
+            <Button
+                android:id="@+id/bnt_v3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="ㅓ" />
+
+            <Button
+                android:id="@+id/bnt_v4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:text="ㅕ" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bnt_v5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="ㅗ" />
+
+            <Button
+                android:id="@+id/bnt_v6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="ㅛ" />
+
+            <Button
+                android:id="@+id/bnt_v7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:text="ㅜ" />
+
+            <Button
+                android:id="@+id/bnt_v8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:text="ㅠ" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bnt_v9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="ㅡ" />
+
+            <Button
+                android:id="@+id/bnt_v10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="ㅣ" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

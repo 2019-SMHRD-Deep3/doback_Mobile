@@ -10,7 +10,7 @@ import android.widget.Button;
 import androidx.fragment.app.Fragment;
 
 import com.example.doback.R;
-import com.example.doback.Step01Activity;
+import com.example.doback.Step1Activity;
 
 public class Fragment1 extends Fragment {
 
@@ -26,7 +26,7 @@ public class Fragment1 extends Fragment {
         btn_first.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), Step01Activity.class);
+                Intent intent = new Intent(getActivity(), Step1Activity.class);
                 startActivity(intent);
             }
         });
